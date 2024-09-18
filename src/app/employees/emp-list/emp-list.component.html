@@ -1,0 +1,32 @@
+<div class="container mt-3">
+    <h2 class="mb-4 text-center text-uppercase">Employees List</h2>
+    <div class="text-end m-2"><button class="btn btn-success" routerLink="/add">Add Employee</button></div>
+    <table class="table table-bordered table-responsive border-primary">
+        <thead class="table-dark">
+        <tr class="text-uppercase">
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Salary</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (emp of employees; track $index) {
+            <tr><td>
+                {{ emp.name }}
+            </td><td>
+                {{ emp.email }}
+            </td><td>
+                {{ emp.phone }}
+            </td><td>
+                {{ emp.salary }}
+            </td>
+            <td>
+                <button class="btn btn-primary btn-sm me-2" [routerLink]="['edit/'+emp.id]">Edit</button>
+                <button class="btn btn-danger btn-sm" (click)="deleteEmp(emp.id)">Delete</button>
+            </td></tr>
+        }
+    </tbody>
+    </table>
+ </div>

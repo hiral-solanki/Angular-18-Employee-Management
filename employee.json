@@ -1,0 +1,32 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "name": "emp 1",
+      "email": "emp1@gmail.com",
+      "phone": "12345",
+      "salary": "10000"
+    },
+    {
+      "id": "2",
+      "name": "emp 2",
+      "email": "emp2@gmail.com",
+      "phone": "78985",
+      "salary": "12000"
+    },
+    {
+      "id": "3",
+      "name": "emp 3",
+      "email": "emp3@gmail.com",
+      "phone": "468789",
+      "salary": "15000"
+    },
+    {
+      "id": "2807",
+      "name": "emp 4",
+      "email": "emp4@gmail.com",
+      "phone": "87892",
+      "salary": 20000
+    }
+  ]
+}
